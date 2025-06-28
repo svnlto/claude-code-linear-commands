@@ -57,28 +57,28 @@ Each command follows a specific pattern to generate well-structured Linear issue
 ```
 User: /quick-issue FR: Add rate limiting to API endpoints
 ```
-AI generates a properly formatted Feature Request with basic structure, ready for refinement.
+Claude generates a properly formatted Feature Request with basic structure, ready for refinement.
 
 ### Detailed Issue Creation (`/generate-fr`, `/generate-us`, `/generate-prd`)
 ```
 User: /generate-fr
-AI: I need information about the feature...
+Claude: I need information about the feature...
 User: [Provides details]
-AI: [Generates comprehensive issue with all sections]
+Claude: [Generates comprehensive issue with all sections]
 ```
 
 ### Content Conversion (`/convert-to-linear`)
 ```
 User: /convert-to-linear
 [Pastes email thread or meeting notes]
-AI: [Converts to structured Linear issue format]
+Claude: [Converts to structured Linear issue format]
 ```
 
 ### Issue Analysis (`/analyze-issue`)
 ```
 User: /analyze-issue
 [Pastes existing Linear issue]
-AI: [Provides improvement suggestions and enhanced sections]
+Claude: [Provides improvement suggestions and enhanced sections]
 ```
 
 ## 📋 Command Reference
@@ -176,6 +176,14 @@ Every issue type follows established patterns:
 4. **Link Dependencies**: Reference related issues and blockers
 
 ## 🔧 Installation
+
+### Prerequisites
+
+These commands require the Linear MCP server to be configured in your Claude Code setup. The Linear MCP server enables Claude to directly interact with your Linear workspace.
+
+**Setup the Linear MCP server:** Follow the official Linear documentation at [linear.app/changelog/2025-05-01-mcp](https://linear.app/changelog/2025-05-01-mcp) to configure the Linear integration.
+
+### Install Commands
 
 1. Clone this repository:
 ```bash
